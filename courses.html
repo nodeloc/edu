@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore NodeLoc's comprehensive computer science courses including web development, data science, cybersecurity, and cloud computing.">
+    <title>Courses - NodeLoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">Node</span>
+                        <span class="text-2xl font-bold text-gray-800">Loc</span>
+                        <span class="ml-2 text-sm text-gray-600">.edu.rs</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="courses.html" class="text-blue-600 font-semibold">Courses</a>
+                    <a href="faculty.html" class="text-gray-700 hover:text-blue-600 transition">Faculty</a>
+                    <a href="admissions.html" class="text-gray-700 hover:text-blue-600 transition">Admissions</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="courses.html" class="block px-3 py-2 text-blue-600 font-semibold">Courses</a>
+                <a href="faculty.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Faculty</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Admissions</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Courses</h1>
+            <p class="text-xl text-blue-100">Comprehensive programs designed for your success in technology</p>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Choose Your Path</h2>
+                <p class="text-xl text-gray-600">From beginner to advanced, we have the right program for you</p>
+            </div>
+
+            <!-- Web Development -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-code text-blue-600 text-4xl mr-4"></i>
+                    <h3 class="text-3xl font-bold">Web Development</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Full Stack Web Development</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Intermediate</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>6 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Master modern web development with React, Node.js, Express, MongoDB, and more.
+                                Build full-stack applications from scratch and deploy them to production.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>HTML5, CSS3, JavaScript (ES6+)</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>React.js and modern frontend frameworks</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Node.js and Express backend development</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Database design with MongoDB and SQL</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>RESTful APIs and authentication</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Deployment and DevOps basics</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Frontend Development with React</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-semibold">Beginner</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>4 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Focus on frontend development using React, the most popular JavaScript library.
+                                Create beautiful, responsive user interfaces for modern web applications.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>JavaScript fundamentals and ES6+</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>React components and hooks</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>State management with Redux</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Responsive design with CSS and Tailwind</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Working with APIs and async data</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Testing and debugging</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science & AI -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-brain text-green-600 text-4xl mr-4"></i>
+                    <h3 class="text-3xl font-bold">Data Science & AI</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Data Science & Machine Learning</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-semibold">Advanced</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>8 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Dive deep into data analysis, machine learning, and AI. Learn to extract insights from data
+                                and build predictive models using Python and modern ML frameworks.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Python for data science</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Statistics and probability</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Data visualization with matplotlib and seaborn</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Machine learning algorithms</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Deep learning with TensorFlow and PyTorch</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Natural Language Processing</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-green-500 to-green-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Python Programming & Data Analysis</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-semibold">Beginner</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>5 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Start your data science journey with Python programming and data analysis fundamentals.
+                                Perfect for beginners looking to enter the field of data science.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Python programming basics</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>NumPy and Pandas for data manipulation</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Data cleaning and preprocessing</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Exploratory data analysis</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Basic statistics and visualization</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Introduction to machine learning</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cybersecurity -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-shield-alt text-red-600 text-4xl mr-4"></i>
+                    <h3 class="text-3xl font-bold">Cybersecurity</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-red-500 to-red-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Cybersecurity Professional</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Intermediate</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>7 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Learn to protect systems and networks from cyber threats. Master ethical hacking,
+                                penetration testing, and security best practices.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Network security fundamentals</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Ethical hacking and penetration testing</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Cryptography and secure communications</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Vulnerability assessment</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Incident response and forensics</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Security tools (Kali Linux, Metasploit)</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-red-500 to-red-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Network Security Essentials</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-semibold">Beginner</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>4 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Build a strong foundation in network security concepts and practices.
+                                Ideal for those starting their cybersecurity career.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Networking fundamentals</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Security principles and best practices</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Firewall configuration</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Intrusion detection systems</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>VPN and secure remote access</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Security compliance and policies</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Computing & DevOps -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-cloud text-purple-600 text-4xl mr-4"></i>
+                    <h3 class="text-3xl font-bold">Cloud Computing & DevOps</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">Cloud Solutions Architect</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-semibold">Advanced</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>7 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Master cloud platforms including AWS, Azure, and Google Cloud. Design, deploy,
+                                and manage scalable cloud infrastructure.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>AWS, Azure, and GCP fundamentals</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Cloud architecture and design patterns</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Containerization with Docker and Kubernetes</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Infrastructure as Code (Terraform)</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Cloud security and compliance</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Cost optimization strategies</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">DevOps Engineering</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Intermediate</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>6 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Learn DevOps practices and tools to automate software development and deployment.
+                                Bridge the gap between development and operations.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>CI/CD pipeline development</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Git and version control</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Docker and containerization</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Kubernetes orchestration</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Monitoring and logging (Prometheus, ELK)</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Automation with Ansible and Jenkins</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-mobile-alt text-indigo-600 text-4xl mr-4"></i>
+                    <h3 class="text-3xl font-bold">Mobile Development</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                        <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-2"></div>
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold mb-3">iOS & Android Development</h4>
+                            <div class="flex items-center gap-4 mb-4">
+                                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Intermediate</span>
+                                <span class="text-gray-600"><i class="far fa-clock mr-1"></i>6 months</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Build native mobile applications for both iOS and Android platforms using
+                                Swift, Kotlin, and cross-platform frameworks.
+                            </p>
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">What You'll Learn:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>iOS development with Swift</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Android development with Kotlin</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>React Native for cross-platform apps</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>Mobile UI/UX design principles</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>API integration and data management</li>
+                                    <li><i class="fas fa-check text-green-600 mr-2"></i>App deployment and publishing</li>
+                                </ul>
+                            </div>
+                            <a href="admissions.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Format -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Flexible Learning Options</h2>
+                <p class="text-xl text-gray-600">Choose the format that fits your schedule</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <i class="fas fa-calendar-day text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Full-Time Programs</h3>
+                    <p class="text-gray-600">Intensive weekday courses for quick career transitions</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <i class="fas fa-calendar-week text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Part-Time Programs</h3>
+                    <p class="text-gray-600">Evening and weekend classes for working professionals</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <i class="fas fa-laptop-house text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Hybrid Learning</h3>
+                    <p class="text-gray-600">Combination of in-person and online instruction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Learning?</h2>
+            <p class="text-xl mb-8 text-blue-100">Enroll today and transform your career in technology</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="admissions.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Apply Now
+                </a>
+                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">NodeLoc</h3>
+                    <p class="text-sm">Leading computer science education institution in Serbia, dedicated to excellence in tech training.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Courses</a></li>
+                        <li><a href="faculty.html" class="hover:text-white transition">Faculty</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="courses.html" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Data Science</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cybersecurity</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Belgrade, Serbia</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nodeloc.edu.rs</li>
+                        <li><i class="fas fa-phone mr-2"></i>+381 11 123 4567</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 NodeLoc Educational Institution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

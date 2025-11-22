@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NodeLoc - Leading Computer Science Education Institution in Serbia. Offering comprehensive training in programming, data science, cybersecurity, and cloud computing.">
+    <meta name="keywords" content="computer science, education, Serbia, programming, data science, cybersecurity, IT training">
+    <title>NodeLoc - Computer Science Education in Serbia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">Node</span>
+                        <span class="text-2xl font-bold text-gray-800">Loc</span>
+                        <span class="ml-2 text-sm text-gray-600">.edu.rs</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="courses.html" class="text-gray-700 hover:text-blue-600 transition">Courses</a>
+                    <a href="faculty.html" class="text-gray-700 hover:text-blue-600 transition">Faculty</a>
+                    <a href="admissions.html" class="text-gray-700 hover:text-blue-600 transition">Admissions</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-blue-600 font-semibold">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="courses.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Courses</a>
+                <a href="faculty.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Faculty</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Admissions</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Transform Your Future with Computer Science
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Leading IT education institution in Serbia, empowering the next generation of tech professionals
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="admissions.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                        Apply Now
+                    </a>
+                    <a href="courses.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                        Explore Courses
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">2000+</div>
+                    <div class="text-gray-600">Students Trained</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                    <div class="text-gray-600">Expert Instructors</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                    <div class="text-gray-600">Programs Offered</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">95%</div>
+                    <div class="text-gray-600">Job Placement Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose NodeLoc?</h2>
+                <p class="text-xl text-gray-600">Excellence in computer science education</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Instructors</h3>
+                    <p class="text-gray-600">Learn from industry professionals with years of real-world experience in leading tech companies.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hands-On Learning</h3>
+                    <p class="text-gray-600">Practice with real projects and cutting-edge technologies used by top companies worldwide.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Recognized Certification</h3>
+                    <p class="text-gray-600">Earn industry-recognized certificates that boost your career prospects in the tech industry.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Career Support</h3>
+                    <p class="text-gray-600">Receive personalized career guidance, resume reviews, and job placement assistance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Community Network</h3>
+                    <p class="text-gray-600">Join a vibrant community of learners, alumni, and tech professionals across Serbia.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Flexible Schedule</h3>
+                    <p class="text-gray-600">Choose from full-time, part-time, and weekend programs that fit your lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Courses</h2>
+                <p class="text-xl text-gray-600">Start your journey in technology</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-blue-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-code text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Full Stack Web Development</h3>
+                        <p class="text-gray-600 mb-4">Master modern web technologies including React, Node.js, and databases.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500"><i class="far fa-clock"></i> 6 months</span>
+                            <span class="text-sm text-gray-500"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <a href="courses.html" class="text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-green-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Science & AI</h3>
+                        <p class="text-gray-600 mb-4">Dive into machine learning, data analysis, and artificial intelligence.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500"><i class="far fa-clock"></i> 8 months</span>
+                            <span class="text-sm text-gray-500"><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <a href="courses.html" class="text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+                <div class="border rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-red-600 h-48 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Cybersecurity</h3>
+                        <p class="text-gray-600 mb-4">Learn to protect systems and networks from cyber threats and attacks.</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-sm text-gray-500"><i class="far fa-clock"></i> 7 months</span>
+                            <span class="text-sm text-gray-500"><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <a href="courses.html" class="text-blue-600 font-semibold hover:text-blue-800">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="courses.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                    View All Courses
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Tech Career?</h2>
+            <p class="text-xl mb-8 text-blue-100">Join thousands of successful graduates who transformed their careers with NodeLoc</p>
+            <a href="admissions.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                Apply Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">NodeLoc</h3>
+                    <p class="text-sm">Leading computer science education institution in Serbia, dedicated to excellence in tech training.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Courses</a></li>
+                        <li><a href="faculty.html" class="hover:text-white transition">Faculty</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="courses.html" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Data Science</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cybersecurity</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Belgrade, Serbia</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nodeloc.edu.rs</li>
+                        <li><i class="fas fa-phone mr-2"></i>+381 11 123 4567</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 NodeLoc Educational Institution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

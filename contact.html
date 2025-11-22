@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact NodeLoc - Get in touch with us for admissions, inquiries, or to learn more about our programs.">
+    <title>Contact Us - NodeLoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <span class="text-2xl font-bold text-blue-600">Node</span>
+                        <span class="text-2xl font-bold text-gray-800">Loc</span>
+                        <span class="ml-2 text-sm text-gray-600">.edu.rs</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="courses.html" class="text-gray-700 hover:text-blue-600 transition">Courses</a>
+                    <a href="faculty.html" class="text-gray-700 hover:text-blue-600 transition">Faculty</a>
+                    <a href="admissions.html" class="text-gray-700 hover:text-blue-600 transition">Admissions</a>
+                    <a href="contact.html" class="text-blue-600 font-semibold">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="courses.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Courses</a>
+                <a href="faculty.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Faculty</a>
+                <a href="admissions.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100">Admissions</a>
+                <a href="contact.html" class="block px-3 py-2 text-blue-600 font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl text-blue-100">We're here to help you start your tech journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                   placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                   placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                   placeholder="+381 11 123 4567">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject *</label>
+                            <select id="subject" name="subject" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none">
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="courses">Course Information</option>
+                                <option value="scholarships">Scholarships & Financial Aid</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                                      placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit"
+                                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                    <p class="text-gray-600 mb-8">
+                        Have questions? Our admissions team is ready to help you choose the right program
+                        and guide you through the application process.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg mb-1">Visit Us</h3>
+                                <p class="text-gray-600">
+                                    Kralja Petra 42<br>
+                                    11000 Belgrade<br>
+                                    Serbia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg mb-1">Call Us</h3>
+                                <p class="text-gray-600">
+                                    Main Office: +381 11 123 4567<br>
+                                    Admissions: +381 11 123 4568<br>
+                                    Mon-Fri: 9:00 AM - 6:00 PM
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg mb-1">Email Us</h3>
+                                <p class="text-gray-600">
+                                    General: info@nodeloc.edu.rs<br>
+                                    Admissions: admissions@nodeloc.edu.rs<br>
+                                    Support: support@nodeloc.edu.rs
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-globe text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg mb-1">Follow Us</h3>
+                                <div class="flex space-x-4 mt-2">
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-facebook text-2xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-twitter text-2xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-linkedin text-2xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-instagram text-2xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+                                        <i class="fab fa-youtube text-2xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">Find Us on the Map</h2>
+                <p class="text-gray-600">Located in the heart of Belgrade</p>
+            </div>
+            <div class="bg-gray-300 rounded-lg overflow-hidden" style="height: 400px;">
+                <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-200 to-blue-300">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-blue-600 text-6xl mb-4"></i>
+                        <p class="text-gray-700 font-semibold">Map Placeholder</p>
+                        <p class="text-gray-600 text-sm">Kralja Petra 42, Belgrade, Serbia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Office Hours</h2>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-lg mb-4">Administrative Office</h3>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span class="font-semibold">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span class="font-semibold">10:00 AM - 2:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span class="font-semibold">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-4">Admissions Office</h3>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span class="font-semibold">9:00 AM - 7:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span class="font-semibold">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span class="font-semibold">By Appointment</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Need Specific Information?</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                    <i class="fas fa-graduation-cap text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Admissions Help</h3>
+                    <p class="text-gray-600 mb-4">Questions about the application process or requirements?</p>
+                    <a href="admissions.html" class="text-blue-600 font-semibold hover:text-blue-800">
+                        View Admissions Info →
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                    <i class="fas fa-book text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Course Details</h3>
+                    <p class="text-gray-600 mb-4">Want to learn more about our programs and curriculum?</p>
+                    <a href="courses.html" class="text-blue-600 font-semibold hover:text-blue-800">
+                        Explore Courses →
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                    <i class="fas fa-calendar-alt text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-3">Schedule a Visit</h3>
+                    <p class="text-gray-600 mb-4">Tour our campus and meet our team in person</p>
+                    <a href="mailto:info@nodeloc.edu.rs" class="text-blue-600 font-semibold hover:text-blue-800">
+                        Book a Tour →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">NodeLoc</h3>
+                    <p class="text-sm">Leading computer science education institution in Serbia, dedicated to excellence in tech training.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Courses</a></li>
+                        <li><a href="faculty.html" class="hover:text-white transition">Faculty</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="courses.html" class="hover:text-white transition">Web Development</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Data Science</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cybersecurity</a></li>
+                        <li><a href="courses.html" class="hover:text-white transition">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Belgrade, Serbia</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@nodeloc.edu.rs</li>
+                        <li><i class="fas fa-phone mr-2"></i>+381 11 123 4567</li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 NodeLoc Educational Institution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
